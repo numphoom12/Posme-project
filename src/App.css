@@ -1,38 +1,18 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap%27);
+
+*{
+  font-family: 'Bai Jamjuree', sans-serif;
+  /* background-color: #242e38; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+html{
+  background-color: #242e38;
+  
+} 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.App{
+  background-color: #242e38;
+  margin-bottom: 100px;
+}   
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

@@ -1,24 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import Navhome from './Navbar butt/Navbarhome';
+import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import Userpage from './userpage/userpage';
+import Psswdpage from './passwordpage/psswdpage';
+import Deletepage from './delete-account/deletepage';
+import Paymentpage from './payment page/paymentpage';
+import Editpage from './editpage/editpage';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Navhome/>
+    <BrowserRouter>
+    <div className='App'>
+      <Routes>
+      <Route path='/' element={<Userpage/>}/> 
+      <Route path='Editpage' element = {<Editpage/>}/> 
+      <Route path='Psswdpage' element = {<Psswdpage/>}/>
+      <Route path='Paymentpage' element = {<Paymentpage/>}/>
+      <Route path='Deletepage' element = {<Deletepage/>}/>
+      </Routes>
     </div>
+    </BrowserRouter>
+    </div>
+
+    
+    // <div>
+    // <Navhome/>
+    // <div className=''>
+    //   {/* <Psswdpage/> */}
+    //   {/* <Paymentpage/> */}
+    //   <Deletepage/>
+    // </div>
+
+    // </div>
+
   );
 }
 

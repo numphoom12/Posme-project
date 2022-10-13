@@ -1,0 +1,117 @@
+.personal-info{
+    background-color: white;
+    height: 250px;
+    text-align: center;
+    width: 700px;
+    margin:0px auto;
+    border :5px solid #eac43d;
+    border-radius: 80px;
+    font-size: 45px;
+    padding: 80px;
+}
+
+.info{
+    text-align: center;
+    background-color: white;
+    margin:50px auto;
+    border :5px solid #eac43d;
+    border-radius: 80px;
+    width: 700px;
+    height: 350px;
+    padding: 130px 0;  
+    font-size: 45px;
+}
+
+.resume-page-logo{
+    height: 200px; 
+    margin-left:435px;
+    margin-top:70px;
+    margin-bottom: 50px;
+  
+}
+
+.save-editpage{
+    background-color: #eac43d;
+    border-radius: 80px;
+    height: 100px;
+    width:700px;
+    margin: 90px auto;
+    text-align: center;
+    font-size: 55px;
+    color: white;
+    font-weight: 100%;
+}
+
+/* .e-info{
+    background-color: white;
+} */
+
+.e-username{
+    height: 60px;
+    width:700px;
+    margin:50px 162px 0;
+    text-align: center;
+    border :5px solid #eac43d;
+    border-radius: 100px ;
+    font-size: 50px;
+}
+
+.e-storename{
+    height: 60px;
+    width: 700px;
+    margin:30px 162px 0;
+    text-align: center;
+    border :5px solid #eac43d;
+    border-radius: 100px ;
+    font-size: 50px;
+}
+
+.e-address{
+    height: 60px;
+    width: 700px;
+    margin:30px 162px 0;
+    text-align: center;
+    border :5px solid #eac43d;
+    border-radius: 100px ;
+    font-size: 50px;
+}
+.e-fname{
+    height: 60px;
+    width: 700px;
+    margin:30px 162px 0;
+    text-align: center;
+    border :5px solid #eac43d;
+    border-radius: 100px ;
+    font-size: 50px;
+}
+.e-lname{
+    height: 60px;
+    width: 700px;
+    margin:30px 162px 0;
+    text-align: center;
+    border :5px solid #eac43d;
+    border-radius: 100px ;
+    font-size: 50px;
+}
+.e-mail{
+    height: 60px;
+    width: 700px;
+    margin:30px 162px 0;
+    text-align: center;
+    border :5px solid #eac43d;
+    border-radius: 100px ;
+    font-size: 50px;
+}
+
+.e-tax{
+    height: 60px;
+    width: 700px;
+    margin: 30px 162px 0;
+    text-align: center;
+    border:5px solid #eac43d;
+    border-radius:100px;
+    font-size: 50px;
+}
+
+
+
