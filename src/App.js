@@ -6,6 +6,7 @@ import Psswdpage from './passwordpage/psswdpage';
 import Deletepage from './delete-account/deletepage';
 import Paymentpage from './payment page/paymentpage';
 import Editpage from './editpage/editpage';
+import Login from './login/Login';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Route path='Psswdpage' element = {<Psswdpage/>}/>
       <Route path='Paymentpage' element = {<Paymentpage/>}/>
       <Route path='Deletepage' element = {<Deletepage/>}/>
+      <Route path='Login' element = {<Login/>}/>
       </Routes>
     </div>
     </BrowserRouter>

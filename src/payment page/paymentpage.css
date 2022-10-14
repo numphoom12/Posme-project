@@ -11,13 +11,14 @@
     border-radius: 100%;
     margin-top: 100px;
     margin-left: 368px;
+    margin-bottom: 50px;
 }
 
 .new-number{
     background-color:antiquewhite;
     width:800px;
     height: 100px;
-    margin-top: 120px;
+    margin-top: 50px;
     /* margin-left: 120px; */
     border-radius: 100px;
     justify-content: center;
@@ -43,4 +44,8 @@
 .pay-logo{
     margin-top:50px;
     height: 200px;
+}
+
+.p-text{
+    color: white;
 }

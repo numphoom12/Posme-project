@@ -2,8 +2,9 @@ import {React, useEffect, useState} from 'react'
 import './deletepage.css'
 import {Link} from 'react-router-dom' 
 import { Button } from 'react-bootstrap'
+import { useNavigate,Navigate } from "react-router-dom";
 // import { FaEye } from "react-icons/fa";
-import { FaEyeSlash,FaEye } from "react-icons/fa";
+// import { FaEyeSlash,FaEye } from "react-icons/fa";
 import axios from 'axios';
 
 
@@ -12,14 +13,13 @@ function Deletepage() {
   const [passwordInfo, setPasswordInfo] = useState("")
   const [eyeicon, setEyeIcon] = useState('FaEye')
   const [type, setType] = useState('password')
+  const [delclick,setDelclick] = useState(0)
+  const navigate = useNavigate();
 
   const handlesubmit = () =>{
-    const psswd = {
-  	  "password": passwordInfo
-    }
-    console.log(psswd)
-    axios.post("https://posme.fun:2096/auth/user",psswd)
+    axios.delete("https://posme.fun:2096/auth/user",{withCredentials : true})
   }
+
 
   return (
     <div className='delete-page'>
@@ -32,15 +32,15 @@ function Deletepage() {
         
         <div className='delete-text'>
           <i> 
-            Please enter your password
+            Confirm account delation?
           </i>
         </div>
         {/* <textarea className='delete-password' placeholder='password' onChange={e => setPasswordInfo(e.target.value)}>
         </textarea> */}
-        <input type = {type} className='delete-password' placeholder='password' onChange={e => setPasswordInfo(e.target.value)}/>
+        {/* <input type = {type} className='delete-password' placeholder='password' onChange={e => setPasswordInfo(e.target.value)}/>
         <div className="eye-logo" onClick = {handlesubmit}>{
           {type} === 'password' ? <FaEyeSlash size = {'3em'}/> : <FaEye size = {'3em'}/>
-        }</div>
+        }</div> */}
         <Link to = '/'>
         <div className='delete-backbutt'>
           <span>
@@ -49,9 +49,11 @@ function Deletepage() {
         </div>
         </Link>
 
-        <Button onClick={() => {console.log(passwordInfo)}} className='delete-deletebutt'>
+        <Link to = '/Login'>
+        <Button onClick={handlesubmit} className='delete-deletebutt'>
             Delete
         </Button>
+        </Link>
     </div>
   )
 }
